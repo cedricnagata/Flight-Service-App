@@ -1,0 +1,14 @@
+# search with no results
+# 
+# Test harness annotation; can output errors to stdout:
+#   public_test_case
+#
+# commands to execute:
+search "Seattle WA" "Fake City NA" 0 1 10
+quit
+*
+#
+# expected output:
+No flights match your selection
+Goodbye
+*

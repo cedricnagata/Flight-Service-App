@@ -1,0 +1,15 @@
+# try to create a user when username is already taken
+#
+# Test harness annotation; it's allowed to print failures to stdout:
+#   public_test_case
+#
+# commands to execute:
+create user1 user1 100
+create user1 user2 100
+quit
+*
+# Possible outcome 1
+Created user user1
+Failed to create user
+Goodbye
+*
